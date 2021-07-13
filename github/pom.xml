@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>dummy</artifactId>
+	<artifactId>github</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>dummy</name>
+	<name>github</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,19 +29,6 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com/</uri>
-						<username>ganeshchandu09</username>
-						<password>Ganesh@9</password>
-						<environment>Sandbox</environment>
-						<muleVersion>4.3.0</muleVersion>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
-						<applicationName>dummy</applicationName>
-						<objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -58,11 +45,6 @@
 			<artifactId>mule-sockets-connector</artifactId>
 			<version>1.2.1</version>
 			<classifier>mule-plugin</classifier>
-		</dependency>
-		<dependency>
-			<groupId>org.sonarsource.scanner.maven</groupId>
-			<artifactId>sonar-maven-plugin</artifactId>
-			<version>3.6.1.1688</version>
 		</dependency>
 	</dependencies>
 
